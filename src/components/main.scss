@@ -1,0 +1,49 @@
+body {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    .todo-container {
+        max-width: 400px;
+        .check-all-button {
+            position: absolute;
+        }
+        .main-checkbox {
+            top: 8px;
+            position: absolute;
+            left: 10px;
+        }
+        .input-field {
+            width: 100%;
+            text-indent: 30px;
+            padding: 10px 0;
+            text-transform: capitalize;
+            &:focus {
+                outline: none;
+            }
+    }
+    .todo-list-item {
+        padding: 10px;
+        position: relative;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,.5);
+        margin-bottom: 10px;
+    }
+    .remove-all-button {
+        display: none;
+    }
+    .display-block {
+        display: block;
+    }
+    .remove {
+        display: block;
+        float: right;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .todo-item-text {
+        margin-left: 10px;
+        text-transform: capitalize;
+    }
+  }
